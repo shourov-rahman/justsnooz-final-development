@@ -1,0 +1,161 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_ncDjtT": {
+      "type": "image-banner",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "xsmall",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "178d28a7-8c38-4b54-93d3-4f373de515b5": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14588668117088__178d28a7-8c38-4b54-93d3-4f373de515b5-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get in touch",
+            "heading_size": "h1"
+          }
+        },
+        "template--14588668117088__178d28a7-8c38-4b54-93d3-4f373de515b5-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Have a question or comment? Don't be shy: Reach out and say hi!<br/>Support hours: Monday-Friday, 7am-3pm</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14588668117088__178d28a7-8c38-4b54-93d3-4f373de515b5-heading-1",
+        "template--14588668117088__178d28a7-8c38-4b54-93d3-4f373de515b5-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 16
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "lumin_grids_y7aFaM": {
+      "type": "lumin-grids",
+      "blocks": {
+        "image_dnT7Gh": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "50",
+            "medium_hide": false,
+            "grid_width_tablet": "50",
+            "small_hide": false,
+            "overlay_opacity": 0,
+            "opacity_color": "#000000",
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "text_border": 0,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "Find the B<em><strong>est</strong></em>",
+            "head_color": "#ffffff",
+            "head_size_d": 30,
+            "head_size_m": 26,
+            "margin_bottom": 15,
+            "text": "Find the perfect solution for your skin’s needsin just a few steps",
+            "text_color": "#ffffff",
+            "text_size_d": 18,
+            "text_size_m": 16,
+            "button-text": "Shop collection",
+            "button_link": "shopify://collections",
+            "desktop_content_alignment": "center",
+            "image_content_position": "top-center",
+            "grid-url": ""
+          }
+        },
+        "image_iBY6xP": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "50",
+            "medium_hide": false,
+            "grid_width_tablet": "50",
+            "small_hide": false,
+            "overlay_opacity": 0,
+            "opacity_color": "#000000",
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "text_border": 0,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "Earn <strong>points</strong>, reap <em><strong>rewards</strong></em>",
+            "head_color": "#ffffff",
+            "head_size_d": 30,
+            "head_size_m": 26,
+            "margin_bottom": 15,
+            "text": "Sign up for our reward program and stack up yourpoints for free product.",
+            "text_color": "#ffffff",
+            "text_size_d": 18,
+            "text_size_m": 16,
+            "button-text": "join now",
+            "button_link": "shopify://collections/all",
+            "desktop_content_alignment": "center",
+            "image_content_position": "top-center",
+            "grid-url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_dnT7Gh",
+        "image_iBY6xP"
+      ],
+      "settings": {
+        "video_border": 6,
+        "grid_gap": 14,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 36,
+        "margin_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_ncDjtT",
+    "178d28a7-8c38-4b54-93d3-4f373de515b5",
+    "form",
+    "lumin_grids_y7aFaM"
+  ]
+}

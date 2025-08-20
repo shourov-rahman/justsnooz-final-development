@@ -1,0 +1,934 @@
+{% doc %}
+  @prompt
+    Create a comparison table section for a Shopify store that shows "What makes SNOOZ better?" with three columns comparing products. Include a product image on the left side and a table with features like Companion App, Real Fan Sound, No Looping Tracks, Natural Sound Spectrum, Travel Friendly, Adjustable Sound, etc. Use checkmarks and X marks to show feature availability. Make it customizable so merchants can edit the heading, product image, feature list, and comparison columns through the theme editor.
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-comparison-table-{{ ai_gen_id }} {
+    padding: {{ block.settings.padding_top }}px 0 {{ block.settings.padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-comparison-table-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-comparison-table-heading-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 40px;
+    color: {{ block.settings.heading_color }};
+    font-size: {{ block.settings.heading_size }}px;
+    font-weight: 600;
+  }
+
+  .ai-comparison-table-content-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .ai-comparison-table-product-{{ ai_gen_id }} {
+    text-align: center;
+  }
+
+  .ai-comparison-table-product-image-{{ ai_gen_id }} {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 20px;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-comparison-table-product-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .ai-comparison-table-product-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 280px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: {{ block.settings.image_border_radius }}px;
+  }
+
+  .ai-comparison-table-product-placeholder-{{ ai_gen_id }} svg {
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+  }
+
+  .ai-comparison-table-product-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.product_title_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+  }
+
+  .ai-comparison-table-wrapper-{{ ai_gen_id }} {
+    overflow-x: auto;
+    border-radius: {{ block.settings.table_border_radius }}px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-comparison-table-main-{{ ai_gen_id }} {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: {{ block.settings.table_background_color }};
+    min-width: 500px;
+  }
+
+  .ai-comparison-table-header-{{ ai_gen_id }} {
+    background-color: {{ block.settings.header_background_color }};
+  }
+
+  .ai-comparison-table-header-{{ ai_gen_id }} th {
+    padding: 20px 15px;
+    text-align: center;
+    font-size: {{ block.settings.header_text_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.header_text_color }};
+    border-bottom: 2px solid {{ block.settings.border_color }};
+  }
+
+  .ai-comparison-table-header-{{ ai_gen_id }} th:first-child {
+    text-align: left;
+    background-color: {{ block.settings.table_background_color }};
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-comparison-table-row-{{ ai_gen_id }} {
+    border-bottom: 1px solid {{ block.settings.border_color }};
+  }
+
+  .ai-comparison-table-row-{{ ai_gen_id }}:nth-child(even) {
+    background-color: {{ block.settings.row_alternate_color }};
+  }
+
+  .ai-comparison-table-cell-{{ ai_gen_id }} {
+    padding: 16px 15px;
+    text-align: center;
+    font-size: {{ block.settings.body_text_size }}px;
+    color: {{ block.settings.text_color }};
+    vertical-align: middle;
+  }
+
+  .ai-comparison-table-cell-{{ ai_gen_id }}:first-child {
+    text-align: left;
+    font-weight: 500;
+    background-color: {{ block.settings.feature_column_color }};
+  }
+
+  .ai-comparison-table-icon-{{ ai_gen_id }} {
+    width: 24px;
+    height: 24px;
+    display: inline-block;}
+
+  .ai-comparison-table-checkmark-{{ ai_gen_id }} {
+    color: {{ block.settings.checkmark_color }};
+  }
+
+  .ai-comparison-table-cross-{{ ai_gen_id }} {
+    color: {{ block.settings.cross_color }};
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-comparison-table-content-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .ai-comparison-table-product-image-{{ ai_gen_id }} {
+      max-width: 200px;
+    }
+
+    .ai-comparison-table-product-placeholder-{{ ai_gen_id }} {
+      height: 200px;
+    }
+
+    .ai-comparison-table-header-{{ ai_gen_id }} th,
+    .ai-comparison-table-cell-{{ ai_gen_id }} {
+      padding: 12px 8px;
+      font-size: 14px;
+    }
+
+    .ai-comparison-table-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 0.8 }}px;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .ai-comparison-table-container-{{ ai_gen_id }} {
+      padding: 0 15px;
+    }
+
+    .ai-comparison-table-header-{{ ai_gen_id }} th,
+    .ai-comparison-table-cell-{{ ai_gen_id }} {
+      padding: 10px 6px;
+      font-size: 12px;
+    }
+
+    .ai-comparison-table-icon-{{ ai_gen_id }} {
+      width: 20px;
+      height: 20px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-comparison-table-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-comparison-table-container-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank %}
+      <h2 class="ai-comparison-table-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="ai-comparison-table-content-{{ ai_gen_id }}">
+      <div class="ai-comparison-table-product-{{ ai_gen_id }}">
+        <div class="ai-comparison-table-product-image-{{ ai_gen_id }}">
+          {% if block.settings.product_image %}
+            <img
+              src="{{ block.settings.product_image | image_url: width: 600 }}"
+              alt="{{ block.settings.product_image.alt | escape }}"
+              loading="lazy"
+              width="{{ block.settings.product_image.width }}"
+              height="{{ block.settings.product_image.height }}"
+            >
+          {% else %}
+            <div class="ai-comparison-table-product-placeholder-{{ ai_gen_id }}">
+              {{ 'product-1' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+        {% if block.settings.product_title != blank %}
+          <h3 class="ai-comparison-table-product-title-{{ ai_gen_id }}">{{ block.settings.product_title }}</h3>
+        {% endif %}
+      </div>
+
+      <div class="ai-comparison-table-wrapper-{{ ai_gen_id }}">
+        <table class="ai-comparison-table-main-{{ ai_gen_id }}">
+          <thead class="ai-comparison-table-header-{{ ai_gen_id }}">
+            <tr><th>{{ block.settings.features_column_title }}</th>
+              <th>{{ block.settings.column_1_title }}</th>
+              <th>{{ block.settings.column_2_title }}</th>
+              <th>{{ block.settings.column_3_title }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in (1..10) %}
+              {% assign feature_key = 'feature_' | append: i | append: '_name' %}
+              {% assign col1_key = 'feature_' | append: i | append: '_col1' %}
+              {% assign col2_key = 'feature_' | append: i | append: '_col2' %}
+              {% assign col3_key = 'feature_' | append: i | append: '_col3' %}
+              {% assign feature_name = block.settings[feature_key] %}
+              {% assign col1_value = block.settings[col1_key] %}
+              {% assign col2_value = block.settings[col2_key] %}
+              {% assign col3_value = block.settings[col3_key] %}
+
+              {% if feature_name != blank %}
+                <tr class="ai-comparison-table-row-{{ ai_gen_id }}">
+                  <td class="ai-comparison-table-cell-{{ ai_gen_id }}">{{ feature_name }}</td>
+                  <td class="ai-comparison-table-cell-{{ ai_gen_id }}">
+                    {% if col1_value == 'check' %}
+                      <svg class="ai-comparison-table-icon-{{ ai_gen_id }} ai-comparison-table-checkmark-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20,6 9,17 4,12"></polyline>
+                      </svg>
+                    {% elsif col1_value == 'cross' %}
+                      <svg class="ai-comparison-table-icon-{{ ai_gen_id }} ai-comparison-table-cross-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                      </svg>
+                    {% else %}
+                      {{ col1_value }}
+                    {% endif %}
+                  </td>
+                  <td class="ai-comparison-table-cell-{{ ai_gen_id }}">
+                    {% if col2_value == 'check' %}
+                      <svg class="ai-comparison-table-icon-{{ ai_gen_id }} ai-comparison-table-checkmark-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20,6 9,17 4,12"></polyline>
+                      </svg>
+                    {% elsif col2_value == 'cross' %}
+                      <svg class="ai-comparison-table-icon-{{ ai_gen_id }} ai-comparison-table-cross-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                      </svg>
+                    {% else %}
+                      {{ col2_value }}
+                    {% endif %}
+                  </td>
+                  <td class="ai-comparison-table-cell-{{ ai_gen_id }}">
+                    {% if col3_value == 'check' %}
+                      <svg class="ai-comparison-table-icon-{{ ai_gen_id }} ai-comparison-table-checkmark-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20,6 9,17 4,12"></polyline>
+                      </svg>
+                    {% elsif col3_value == 'cross' %}
+                      <svg class="ai-comparison-table-icon-{{ ai_gen_id }} ai-comparison-table-cross-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                      </svg>
+                    {% else %}
+                      {{ col3_value }}
+                    {% endif %}
+                  </td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Comparison Table",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What makes SNOOZ better?"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product image"
+    },
+    {
+      "type": "text",
+      "id": "product_title",
+      "label": "Product title",
+      "default": "SNOOZ White Noise Machine"
+    },
+    {
+      "type": "header",
+      "content": "Table Headers"
+    },
+    {
+      "type": "text",
+      "id": "features_column_title",
+      "label": "Features column title",
+      "default": "Features"
+    },
+    {
+      "type": "text",
+      "id": "column_1_title",
+      "label": "Column 1 title",
+      "default": "SNOOZ"
+    },
+    {
+      "type": "text",
+      "id": "column_2_title",
+      "label": "Column 2 title",
+      "default": "Competitor A"
+    },
+    {
+      "type": "text",
+      "id": "column_3_title",
+      "label": "Column 3 title",
+      "default": "Competitor B"
+    },
+    {
+      "type": "header",
+      "content": "Feature 1"
+    },
+    {
+      "type": "text",
+      "id": "feature_1_name",
+      "label": "Feature name",
+      "default": "Companion App"
+    },
+    {
+      "type": "select",
+      "id": "feature_1_col1",
+      "label": "Column 1 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "feature_1_col2",
+      "label": "Column 2 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "select",
+      "id": "feature_1_col3",
+      "label": "Column 3 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 2"
+    },
+    {
+      "type": "text",
+      "id": "feature_2_name",
+      "label": "Feature name",
+      "default": "Real Fan Sound"
+    },
+    {
+      "type": "select",
+      "id": "feature_2_col1",
+      "label": "Column 1 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "feature_2_col2",
+      "label": "Column 2 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "select",
+      "id": "feature_2_col3",
+      "label": "Column 3 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 3"
+    },
+    {
+      "type": "text",
+      "id": "feature_3_name",
+      "label": "Feature name",
+      "default": "No Looping Tracks"
+    },
+    {
+      "type": "select",
+      "id": "feature_3_col1",
+      "label": "Column 1 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "feature_3_col2",
+      "label": "Column 2 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "select",
+      "id": "feature_3_col3",
+      "label": "Column 3 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 4"
+    },
+    {
+      "type": "text",
+      "id": "feature_4_name",
+      "label": "Feature name",
+      "default": "Natural Sound Spectrum"
+    },
+    {
+      "type": "select",
+      "id": "feature_4_col1",
+      "label": "Column 1 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "feature_4_col2",
+      "label": "Column 2 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "select",
+      "id": "feature_4_col3",
+      "label": "Column 3 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 5"
+    },
+    {
+      "type": "text",
+      "id": "feature_5_name",
+      "label": "Feature name",
+      "default": "Travel Friendly"
+    },
+    {
+      "type": "select",
+      "id": "feature_5_col1",
+      "label": "Column 1 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "feature_5_col2",
+      "label": "Column 2 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "select",
+      "id": "feature_5_col3",
+      "label": "Column 3 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "header",
+      "content": "Feature 6"
+    },
+    {
+      "type": "text",
+      "id": "feature_6_name",
+      "label": "Feature name",
+      "default": "Adjustable Sound"
+    },
+    {
+      "type": "select",
+      "id": "feature_6_col1",
+      "label": "Column 1 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "feature_6_col2",
+      "label": "Column 2 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "feature_6_col3",
+      "label": "Column 3 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "header",
+      "content": "Feature 7"
+    },
+    {
+      "type": "text",
+      "id": "feature_7_name",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "feature_7_col1",
+      "label": "Column 1 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "feature_7_col2",
+      "label": "Column 2 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "select",
+      "id": "feature_7_col3",
+      "label": "Column 3 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 8"
+    },
+    {
+      "type": "text",
+      "id": "feature_8_name",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "feature_8_col1",
+      "label": "Column 1 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "feature_8_col2",
+      "label": "Column 2 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "select",
+      "id": "feature_8_col3",
+      "label": "Column 3 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 9"
+    },
+    {
+      "type": "text",
+      "id": "feature_9_name",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "feature_9_col1",
+      "label": "Column 1 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "feature_9_col2",
+      "label": "Column 2 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "select",
+      "id": "feature_9_col3",
+      "label": "Column 3 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 10"
+    },
+    {
+      "type": "text",
+      "id": "feature_10_name",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "feature_10_col1",
+      "label": "Column 1 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "feature_10_col2",
+      "label": "Column 2 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "select",
+      "id": "feature_10_col3",
+      "label": "Column 3 value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "X mark" },
+        { "value": "text", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "table_background_color",
+      "label": "Table background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "header_background_color",
+      "label": "Header background color",
+      "default": "#f8f9fa"
+    },
+    {
+      "type": "color",
+      "id": "header_text_color",
+      "label": "Header text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "row_alternate_color",
+      "label": "Alternate row color",
+      "default": "#f8f9fa"
+    },
+    {
+      "type": "color",
+      "id": "feature_column_color",
+      "label": "Feature column color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e9ecef"
+    },
+    {
+      "type": "color",
+      "id": "checkmark_color",
+      "label": "Checkmark color",
+      "default": "#28a745"
+    },
+    {
+      "type": "color",
+      "id": "cross_color",
+      "label": "Cross mark color",
+      "default": "#dc3545"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "product_title_size",
+      "min": 14,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Product title size",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "header_text_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Table header text size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "body_text_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Table body text size",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "table_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Table border radius",
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Comparison Table"
+    }
+  ]
+}
+{% endschema %}

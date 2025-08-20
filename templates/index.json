@@ -1,0 +1,513 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1750068411d99198c4": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_6f20322_Ln7MbC": {
+          "type": "ai_gen_block_6f20322",
+          "settings": {
+            "color_scheme": "scheme-28ae7fec-8a3b-472c-b8b3-df5e13a51ef1",
+            "image_size": "small",
+            "mobile_layout": "column",
+            "image": "shopify://shop_images/original_cloud.jpg",
+            "headline": "Uninterrupted sleep at the touch of a button",
+            "headline_size": 48,
+            "button_text": "Shop SNOOZ White Noise Machine",
+            "button_link": "shopify://products/snooz-white-noise-machine",
+            "button_bg_color": "#00eec4",
+            "button_text_color": "#ffffff",
+            "button_hover_bg_color": "#00eec4",
+            "button_hover_text_color": "#ffffff",
+            "button_font_size": 16,
+            "button_font_weight": "600",
+            "button_border_radius": 32,
+            "button_padding_top": 15,
+            "button_padding_bottom": 15,
+            "button_padding_left": 30,
+            "button_padding_right": 30
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_6f20322_Ln7MbC"
+      ],
+      "settings": {}
+    },
+    "image_banner_izqeMr": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_FVcm7B": {
+          "type": "heading",
+          "settings": {
+            "heading": "Take $15 off SNOOZ Original",
+            "heading_size": "h1"
+          }
+        },
+        "text_rXAbzT": {
+          "type": "text",
+          "settings": {
+            "text": "Give Dad the sleep upgrade he didn’t know he needed.Code automatically applied at checkout.",
+            "text_style": "body"
+          }
+        },
+        "buttons_LmXJTA": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FVcm7B",
+        "text_rXAbzT",
+        "buttons_LmXJTA"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/2d859c88-e43d-4ff0-9e95-3492c293b027.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "desktop_content_position": "top-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-f34c821e-1c65-403e-a19f-daabfb6247a3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "7c49854d-841e-4486-a518-217b88181104": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15124687650899__7c49854d-841e-4486-a518-217b88181104-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Over 300,000 sound sleepers</strong>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "template--15124687650899__7c49854d-841e-4486-a518-217b88181104-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-04cfaf5a-da3c-411a-a24f-6610911115d7",
+        "full_width": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "fe5ed809-ae7a-4338-b36e-97adb1e4a1f8": {
+      "type": "brands",
+      "blocks": {
+        "template--15124687650899__fe5ed809-ae7a-4338-b36e-97adb1e4a1f8-image-1": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify://shop_images/imgi_16_bloomberg_wh.png",
+            "logo_image_width": 200
+          }
+        },
+        "64f46750-9d09-4946-a1fd-a9f16a6f53cb": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify://shop_images/imgi_15_glamour_wh.png",
+            "logo_image_width": 200
+          }
+        },
+        "73c7cc5e-8fca-45cf-8ab6-028719a212ef": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify://shop_images/imgi_19_cnet_wh.png",
+            "logo_image_width": 200
+          }
+        },
+        "ae0836d6-3dc6-4a96-9899-f06fba6956eb": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify://shop_images/imgi_17_real_simple_wh.png",
+            "logo_image_width": 200
+          }
+        },
+        "ab533b91-8157-40e3-b5a4-5f405b375fb5": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify://shop_images/imgi_18_popsugar_wh.png",
+            "logo_image_width": 200
+          }
+        },
+        "image_NXXd7B": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify://shop_images/imgi_13_forbes_wh.png",
+            "logo_image_width": 200
+          }
+        },
+        "image_dz3Ecx": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify://shop_images/imgi_14_popular_science_wh.png",
+            "logo_image_width": 200
+          }
+        }
+      },
+      "block_order": [
+        "template--15124687650899__fe5ed809-ae7a-4338-b36e-97adb1e4a1f8-image-1",
+        "64f46750-9d09-4946-a1fd-a9f16a6f53cb",
+        "73c7cc5e-8fca-45cf-8ab6-028719a212ef",
+        "ae0836d6-3dc6-4a96-9899-f06fba6956eb",
+        "ab533b91-8157-40e3-b5a4-5f405b375fb5",
+        "image_NXXd7B",
+        "image_dz3Ecx"
+      ],
+      "settings": {
+        "scroll_speed": 39,
+        "color_scheme": "scheme-de01ec9d-9e7b-447d-9b98-c687f1fb536e",
+        "padding_desktop": 12,
+        "padding_mobile": 8,
+        "padding_item_desktop": 36,
+        "padding_item_mobile": 24,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_cYeDWK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6ReNUC": {
+          "type": "heading",
+          "settings": {
+            "heading": "SNOOZ your way to superior sleep.",
+            "heading_size": "h1"
+          }
+        },
+        "text_LYtY4j": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We meticulously engineered best-in-class sound machines for the best sleep possible.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6ReNUC",
+        "text_LYtY4j"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-28ae7fec-8a3b-472c-b8b3-df5e13a51ef1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_caPa86": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RgXqct": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_27_calm_restless_mind.png",
+            "title": "<strong>Calm a Restless Mind</strong>",
+            "text": "<p>Wrap yourself in a blanket of sound so you can fall asleep. Gentle white noise provides an environmental cue that it’s time to rest.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DhbQjG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_26_Asleep_Faster_1_a3b2efa9-3fa6-403c-b653-dc3f23b3f92b.png",
+            "title": "<strong>Promote Deeper Sleep</strong>",
+            "text": "<p>Disturbances can knock you out of your REM cycle without you even knowing. White noise can prevent disruptions.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KKeJx6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_29_wake_up_refreshed_c13e3703-61f5-478f-b76c-5486fea8dae3.png",
+            "title": "<strong>Wake Up Refreshed</strong>",
+            "text": "<p>The better you sleep at night, the better your days can be. Making your bedroom a restful space is an investment in wellness.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RgXqct",
+        "column_DhbQjG",
+        "column_KKeJx6"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "heading_center": "center",
+        "image_width": "forth",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-28ae7fec-8a3b-472c-b8b3-df5e13a51ef1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "navigation_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "image_with_text_rPF6bC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_AmqX3n": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sleep soundly, live better",
+            "heading_size": "h2"
+          }
+        },
+        "text_i4QPnd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We focus so much on diet and exercise, why not sleep?<br/><br/>The science is clear: sleep plays a crucial role in our overall wellness. When you sleep better at night, you perform better during the day.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AmqX3n",
+        "text_i4QPnd"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Studio_Session-089-5-Edit_3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-9a42b128-87bf-42f8-ad9e-a9d96c9412ed",
+        "color_scheme": "scheme-9a42b128-87bf-42f8-ad9e-a9d96c9412ed",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_QhJjea": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_DHXaj3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Say goodnight to disturbances.",
+            "heading_size": "h1"
+          }
+        },
+        "text_jWV6CT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Don't just track sleep disturbances - end them. SNOOZ raises the baseline level of sound in your room so many noises are completely masked and others are less startling.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DHXaj3",
+        "text_jWV6CT"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/583_snooz_pro_side_table_9856a27a-0f10-4749-ba1c-9f9cf85ce152_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-28ae7fec-8a3b-472c-b8b3-df5e13a51ef1",
+        "color_scheme": "scheme-28ae7fec-8a3b-472c-b8b3-df5e13a51ef1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_6gV8Ty": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RkwaLC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_34_popsugar-logo.png",
+            "title": "",
+            "text": "<p>“I was skeptical of this sound machine at first, but now I can't sleep without it.”</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iaPdPj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_35_bloomberg-logo.png",
+            "title": "",
+            "text": "<p>\"The SNOOZ should be able to lull even the lightest sleeper to dreamland.\"</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mEf6qF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/imgi_36_cnet-logo.png",
+            "title": "",
+            "text": "<p>\"The SNOOZ should be able to lull even the lightest sleeper to dreamland.\"</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RkwaLC",
+        "column_iaPdPj",
+        "column_mEf6qF"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "heading_center": "center",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-0a4c8cd5-c6a6-4ccd-b6e3-909184b3cac0",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "navigation_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_ygDQUi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_eeVegR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the best shut-eye you’ve ever had. Guaranteed.",
+            "heading_size": "h2"
+          }
+        },
+        "text_7QCkKc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Try our products for the next few months. If you’re not blown away with how much you love your sleep, return it for free and get your money back.</p><p><br/></p><p></p><p>• Free shipping and free returns on all orders</p><p>• 100-Night Happiness Guarantee</p><p>• Hassle-Free Warranty</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_eeVegR",
+        "text_7QCkKc"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/2024_may_breez_jess_apt-4810_2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-9a42b128-87bf-42f8-ad9e-a9d96c9412ed",
+        "color_scheme": "scheme-9a42b128-87bf-42f8-ad9e-a9d96c9412ed",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_ghHCLA": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_4JXCXt": {
+          "type": "heading",
+          "settings": {
+            "heading": "You deserve better sleep.",
+            "heading_size": "h0"
+          }
+        },
+        "buttons_nmJqCV": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4JXCXt",
+        "buttons_nmJqCV"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/2024_house_lifestyle-5154_3.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-1d8161d3-49ea-4245-a680-c9c229402820",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    }
+  },
+  "order": [
+    "1750068411d99198c4",
+    "image_banner_izqeMr",
+    "7c49854d-841e-4486-a518-217b88181104",
+    "fe5ed809-ae7a-4338-b36e-97adb1e4a1f8",
+    "rich_text_cYeDWK",
+    "multicolumn_caPa86",
+    "image_with_text_rPF6bC",
+    "image_with_text_QhJjea",
+    "multicolumn_6gV8Ty",
+    "image_with_text_ygDQUi",
+    "image_banner_ghHCLA"
+  ]
+}

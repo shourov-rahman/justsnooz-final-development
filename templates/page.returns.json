@@ -1,0 +1,68 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_3UMV8p": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ALe7yL": {
+          "type": "heading",
+          "settings": {
+            "heading": "100 Night HappinessGuarantee",
+            "heading_size": "h2"
+          }
+        },
+        "text_AGq8he": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We want you to love your SNOOZ. Period.<br/><br/>If for any reason you are not completely satisfied with your purchase, please complete the return request form here or email <a href=\"mailto:cs@getsnooz.com\">cs@getsnooz.com</a> within 100 nights of original purchase for instructions on how to return SNOOZ for a refund or exchange.<br/><br/>All SNOOZ Original units include a 1-year limited warranty. SNOOZ Pro and Breez units include a 2-year limited warranty. For warranty support, please email us at <a href=\"mailto:warranty@getsnooz.com\">warranty@getsnooz.com</a>.<br/><br/>Returns must be in new condition and original packaging. You will be credited for the cost of the item(s) and any applicable tax minus shipping charge (if you paid for expedited shipping) which will not be refunded. SNOOZ will provide a prepaid label for return shipping. Your refund will be processed once we have received the product in our warehouse.<br/><br/>If you're returning an item from a bundle, the refund for the returned item will be at a lower amount. This is because we'll assume the remaining items were bought at their full individual prices, not at the bundle discount. This means you keep the benefit of the bundle price for what you keep, but the refund reflects the discount you received.<br/><br/></p><p>If your item(s) are broken or defective, please email us right away at <a href=\"mailto:cs@getsnooz.com\">cs@getsnooz.com</a> so we can make it right!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ALe7yL",
+        "text_AGq8he"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "contact_form_rqFzrf": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "Return Request",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_3UMV8p",
+    "contact_form_rqFzrf"
+  ]
+}

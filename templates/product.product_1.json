@@ -1,0 +1,1480 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "2901c3cb-238c-4ae5-ad93-576fa7b45359": {
+      "type": "breadcrumbs",
+      "settings": {
+        "title_home": "Home",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 12,
+        "margin_bottom": 12
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "2fead2d5-7a3f-49d9-bacf-1d813be9861e": {
+          "type": "review",
+          "settings": {
+            "lrw_text": "<strong>4.8 - 1356 Reviews</strong>",
+            "lrw_color": "#000000",
+            "margin_top": 15,
+            "margin_bottom": 10
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": 40
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": 24,
+            "sale_price_color": "#c92127",
+            "price_bold": true,
+            "badge_hide": false,
+            "taxes_hide": true,
+            "shipping_hide": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "7105577f-93d1-4b1b-9580-5c13e73776c2": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true,
+            "show_inventory_bar": true,
+            "normal_color": "#0a8f35",
+            "normal_color_2": "#0a8f35",
+            "low_color": "#d50000",
+            "low_color_2": "#d50000",
+            "background_bar": "#e9ecef"
+          }
+        },
+        "custom_field_dcRmjU": {
+          "type": "custom-field",
+          "settings": {
+            "field_style": "checkbox",
+            "text_lable": "Engraving - Personalize your Trimmer for free.",
+            "checkbox_pro": "Engraving Text",
+            "custom_option_1": "Option 1",
+            "custom_option_2": "",
+            "custom_option_3": "",
+            "custom_option_4": "",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "custom_field_VDiVdz": {
+          "type": "custom-field",
+          "settings": {
+            "field_style": "text",
+            "text_lable": "Engraving - Personalize your Trimmer for free. (Add emoji '❤︎☺︎' text)",
+            "checkbox_pro": "Engraving Text",
+            "custom_option_1": "Option 1",
+            "custom_option_2": "",
+            "custom_option_3": "",
+            "custom_option_4": "",
+            "padding_top": 0,
+            "padding_bottom": 0
+          }
+        },
+        "custom_field_6L8ctJ": {
+          "type": "custom-field",
+          "settings": {
+            "field_style": "file",
+            "text_lable": "Upload your image which you want to print on box.",
+            "checkbox_pro": "Engraving Text",
+            "custom_option_1": "Option 1",
+            "custom_option_2": "",
+            "custom_option_3": "",
+            "custom_option_4": "",
+            "padding_top": 12,
+            "padding_bottom": 0
+          }
+        },
+        "custom_field_UAYxDL": {
+          "type": "custom-field",
+          "settings": {
+            "field_style": "date",
+            "text_lable": "Birthday, for receiving as gift.",
+            "checkbox_pro": "Engraving Text",
+            "custom_option_1": "Option 1",
+            "custom_option_2": "",
+            "custom_option_3": "",
+            "custom_option_4": "",
+            "padding_top": 24,
+            "padding_bottom": 0
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true,
+            "skip_cart": false,
+            "cart_text": ""
+          }
+        },
+        "6be49df1-2de0-49c6-9f17-baef396c43c2": {
+          "type": "shipping",
+          "settings": {
+            "ship_days": 4,
+            "cut_off_time": 12,
+            "icon_size": 24,
+            "image_ani": "tada",
+            "text_size": 12,
+            "text_style": "body",
+            "text": "Order in<strong> (timer) </strong>& get it by<strong> (date)  </strong>|<strong> </strong>30-day returns on all orders",
+            "date_locale": "en-US",
+            "ship_bg": "#ffffff",
+            "show_border": false,
+            "ship_border": "#f2f2f2",
+            "border_radius": 6,
+            "padding_top": 12,
+            "padding_bottom": 12,
+            "margin_top": 16,
+            "margin_bottom": 16
+          }
+        },
+        "8f8d8903-27e7-4cac-99c4-ec1b60b7f309": {
+          "type": "fomo",
+          "settings": {
+            "fomo_text_before": "SELLING FAST! <strong>(x) People</strong> are looking at this!",
+            "text_size": 12,
+            "text_alignment": "flex-start",
+            "color_scheme": "background-1",
+            "fomo_border_activate": false,
+            "fomo_border": 6,
+            "fomo_border_color": "#f2f2f2",
+            "pill_color": "#c92127",
+            "fomo_min": 296,
+            "fomo_max": 320,
+            "fomo_speed": 3,
+            "padding_top": 8,
+            "padding_bottom": 12,
+            "margin_top": 16,
+            "margin_bottom": 0
+          }
+        },
+        "ad4a2bc2-8dd2-4105-9923-5bd7d66f77f3": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "color_scheme": "",
+            "icon_font_size": 14,
+            "icon_1": "box",
+            "heading_1": "<strong>FREE SHIPPING GLOBLY</strong>",
+            "icon_2": "return",
+            "heading_2": "<strong>TRY IT RISK-FREE FOR 90 DAYS</strong>",
+            "icon_3": "star",
+            "heading_3": "<strong>FDA CLEARED</strong>"
+          }
+        },
+        "eb02bfdc-836f-40fa-bc36-a93ccbb6f998": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Customer Service",
+            "icon": "none",
+            "content": "<p>Embrace the Freedom of Global Shipping with Every Purchase</p>",
+            "page": ""
+          }
+        },
+        "d3e392fa-572e-4895-a7d3-dd12277627ff": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Return Policy",
+            "icon": "none",
+            "content": "<p>Discover the Future of Hair Removal with IPL Laser Technology.</p>",
+            "page": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "2fead2d5-7a3f-49d9-bacf-1d813be9861e",
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "7105577f-93d1-4b1b-9580-5c13e73776c2",
+        "custom_field_dcRmjU",
+        "custom_field_VDiVdz",
+        "custom_field_6L8ctJ",
+        "custom_field_UAYxDL",
+        "buy_buttons",
+        "6be49df1-2de0-49c6-9f17-baef396c43c2",
+        "8f8d8903-27e7-4cac-99c4-ec1b60b7f309",
+        "ad4a2bc2-8dd2-4105-9923-5bd7d66f77f3",
+        "eb02bfdc-836f-40fa-bc36-a93ccbb6f998",
+        "d3e392fa-572e-4895-a7d3-dd12277627ff",
+        "description",
+        "share"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "columns",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "show_full_image": false,
+        "second_image_size": 0,
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 8,
+        "padding_bottom": 76
+      }
+    },
+    "ebd38537-357b-4b9d-94d3-8480c1f8694b": {
+      "type": "random-number",
+      "settings": {
+        "layout": "grid",
+        "color_scheme": "background-1",
+        "pill_color": "#e20736",
+        "fomo_border": 6,
+        "fomo_border_color": "rgba(0,0,0,0)",
+        "fomo_min": 128,
+        "fomo_max": 136,
+        "fomo_speed": 3,
+        "fomo_text_before": "Use this random number",
+        "number_bold": true,
+        "fomo_text_after": "for <em><strong>urgency for your promotion</strong></em>",
+        "text_alignment": "center",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "margin_top": 0,
+        "margin_bottom": 36
+      }
+    },
+    "a1098323-9921-48ef-9777-4dd2323c4c96": {
+      "type": "lumin-scrolling-text",
+      "blocks": {
+        "26fcb62a-ae36-462b-a3c7-5114f900f05d": {
+          "type": "image",
+          "settings": {
+            "logo_image_width": 54
+          }
+        },
+        "template--20863348932914__a1098323-9921-48ef-9777-4dd2323c4c96-announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "Announcement": "<h2>Take <em>20% Off  With </em>Code <strong>SAVE20</strong></h2>",
+            "announcement_size": 60,
+            "announcement_size_m": 40,
+            "text_spacing": -0.5,
+            "text_transform": "none",
+            "announcement_color": "#1f1d24",
+            "icon": "none",
+            "text_link": ""
+          }
+        },
+        "40df0012-c96a-459b-9e5f-8c00b0a88771": {
+          "type": "image",
+          "settings": {
+            "logo_image_width": 54
+          }
+        },
+        "template--20863348932914__a1098323-9921-48ef-9777-4dd2323c4c96-announcement-2": {
+          "type": "announcement",
+          "settings": {
+            "Announcement": "<h2><em>Free Shipping</em> on Order Over $199</h2>",
+            "announcement_size": 60,
+            "announcement_size_m": 40,
+            "text_spacing": -0.5,
+            "text_transform": "none",
+            "announcement_color": "#1f1d24",
+            "icon": "none",
+            "text_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "26fcb62a-ae36-462b-a3c7-5114f900f05d",
+        "template--20863348932914__a1098323-9921-48ef-9777-4dd2323c4c96-announcement-1",
+        "40df0012-c96a-459b-9e5f-8c00b0a88771",
+        "template--20863348932914__a1098323-9921-48ef-9777-4dd2323c4c96-announcement-2"
+      ],
+      "settings": {
+        "scroll_speed": 40,
+        "reverse": false,
+        "color_scheme": "background-1",
+        "padding_desktop": 0,
+        "padding_mobile": 0,
+        "padding_item_desktop": 32,
+        "padding_item_mobile": 8,
+        "padding_top": 0,
+        "padding_bottom": 32
+      }
+    },
+    "tabs_fn6FhH": {
+      "type": "tabs",
+      "blocks": {
+        "tab_Yz6yiH": {
+          "type": "tab",
+          "settings": {
+            "heading": "Description",
+            "description": true,
+            "tab_content": "<p>Some text here</p>",
+            "page": ""
+          }
+        },
+        "tab_jLE8BQ": {
+          "type": "tab",
+          "settings": {
+            "heading": "Benefits",
+            "description": false,
+            "tab_content": "<h2><strong>Benefits and Features</strong></h2><p>Highlight the key benefits and features of your product or service in a concise and visually appealing manner. Use icons or graphics to make it more engaging.</p>",
+            "page": ""
+          }
+        },
+        "tab_YkPh8c": {
+          "type": "tab",
+          "settings": {
+            "heading": "More info",
+            "description": false,
+            "tab_content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_Yz6yiH",
+        "tab_jLE8BQ",
+        "tab_YkPh8c"
+      ],
+      "settings": {
+        "tabs_color_scheme": "accent-2",
+        "layout": "none",
+        "container_color_scheme": "",
+        "tab_font": 16,
+        "tab_font_align": "center",
+        "tab_content_align": "left",
+        "tab_font_mb": 14,
+        "tab_font_mb_align": "center",
+        "tab_content_align_mb": "left",
+        "show_border": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "lumin_grids_gXTLwh": {
+      "type": "lumin-grids",
+      "blocks": {
+        "image_xJkFrY": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "50",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "overlay_opacity": 0,
+            "opacity_color": "#000000",
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "text_border": 0,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "Benefits and Features",
+            "head_color": "#ffffff",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 4,
+            "text": "Smile Bright, Smile Righ",
+            "text_color": "#ffffff",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "button",
+            "button_link": "",
+            "desktop_content_alignment": "left",
+            "image_content_position": "bottom-left",
+            "grid-url": ""
+          }
+        },
+        "text_4kefPh": {
+          "type": "text",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "25",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "show_border": false,
+            "border_color": "#eeeeee",
+            "padding_size": 30,
+            "padding_size_mobile": 30,
+            "padding_left_mobile": 30,
+            "text_border": 0,
+            "bg_color": "#ffffff",
+            "icon_size": 25,
+            "icon_corner": 0,
+            "head": "<strong>Benefits and Features</strong>",
+            "use_body_font": false,
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "subtitle": "<p>Highlight the key benefits and features of your product or service in a concise and visually appealing manner. Use icons or graphics to make it more engaging.</p>",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "ALL COLLECTIONS",
+            "show_secondary": false,
+            "button_link": "",
+            "image_content_position": "middle-center",
+            "desktop_content_alignment": "left",
+            "grid-url": ""
+          }
+        },
+        "image_dmEGM4": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "25",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "overlay_opacity": 0,
+            "opacity_color": "#000000",
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "text_border": 0,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "",
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "text": "",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "button",
+            "button_link": "",
+            "desktop_content_alignment": "left",
+            "image_content_position": "middle-center",
+            "grid-url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_xJkFrY",
+        "text_4kefPh",
+        "image_dmEGM4"
+      ],
+      "settings": {
+        "video_border": 8,
+        "grid_gap": 8,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 36,
+        "margin_bottom": 36
+      }
+    },
+    "lumin_hero_rEhjqx": {
+      "type": "lumin-hero",
+      "blocks": {
+        "hero_MGjjzQ": {
+          "type": "hero",
+          "settings": {
+            "use_video": false,
+            "main_image_width": 400,
+            "show_1": true,
+            "head_1": "Heading",
+            "text_1": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
+            "show_2": true,
+            "head_2": "Heading",
+            "text_2": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
+            "show_3": true,
+            "head_3": "Heading",
+            "text_3": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
+            "show_4": true,
+            "head_4": "Heading",
+            "text_4": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
+            "show_5": true,
+            "head_5": "Heading",
+            "text_5": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
+            "show_6": true,
+            "head_6": "Heading",
+            "text_6": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines."
+          }
+        }
+      },
+      "block_order": [
+        "hero_MGjjzQ"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "color_scheme_2": "accent-2",
+        "title": "Hero Heading",
+        "heading_size": "h1",
+        "column_alignment": "center",
+        "column_alignment_dt": "center",
+        "column_alignment_mb": "center",
+        "head_text": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.",
+        "feature_image": 60,
+        "feature_image_mb": 40,
+        "gap_section_top": 20,
+        "gap_section_bottom": 20,
+        "pad_section_top": 20,
+        "pad_section_bottom": 20
+      }
+    },
+    "comparison_table_tfMG3t": {
+      "type": "comparison-table",
+      "blocks": {
+        "row_GCyKyi": {
+          "type": "row",
+          "settings": {
+            "benefit": "Benefit",
+            "us": true,
+            "others": false
+          }
+        },
+        "row_x9UqyG": {
+          "type": "row",
+          "settings": {
+            "benefit": "Benefit",
+            "us": true,
+            "others": false
+          }
+        },
+        "row_wDFBx6": {
+          "type": "row",
+          "settings": {
+            "benefit": "Benefit",
+            "us": true,
+            "others": false
+          }
+        },
+        "row_MDmgjb": {
+          "type": "row",
+          "settings": {
+            "benefit": "Benefit",
+            "us": true,
+            "others": false
+          }
+        },
+        "row_7d8rnD": {
+          "type": "row",
+          "settings": {
+            "benefit": "Benefit",
+            "us": true,
+            "others": false
+          }
+        }
+      },
+      "block_order": [
+        "row_GCyKyi",
+        "row_x9UqyG",
+        "row_wDFBx6",
+        "row_MDmgjb",
+        "row_7d8rnD"
+      ],
+      "settings": {
+        "title": "Comparison table",
+        "heading_size": "h1",
+        "text": "<p>Talk about how and why is your brand better than the others.</p>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "layout": "table_second",
+        "color_scheme": "scheme-15ab6c1a-5144-4b7d-a402-482fa31b8c04",
+        "logo_width": 90,
+        "mobile_logo_width": 60,
+        "us_label": "",
+        "others_label": "Others",
+        "benefit_color_scheme": "",
+        "checkmark_color": "#169e35",
+        "icon_cells_color_scheme": "",
+        "table_corner_radius": 8,
+        "table_shadow_opacity": 15,
+        "table_shadow_horizontal_offset": 0,
+        "table_shadow_vertical_offset": 0,
+        "table_shadow_blur": 0,
+        "table_border_thickness": 1,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_pwHa4R": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_tXBVGQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is Olivia Skincare?",
+            "icon": "none",
+            "row_content": "<p>Olivia Skincare is a premium skincare brand dedicated to enhancing your natural beauty through high-quality, effective products. We combine nature's best ingredients with advanced skincare technology to provide solutions for various skin concerns.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KKfmhh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are Olivia Skincare products natural?",
+            "icon": "none",
+            "row_content": "<p>Yes, our products are formulated with natural ingredients. We prioritize using botanicals, vitamins, and minerals that are gentle on the skin while delivering powerful results.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KzDirP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are your products cruelty-free?",
+            "icon": "none",
+            "row_content": "<p>Absolutely. Olivia Skincare is committed to cruelty-free practices. We do not test our products on animals and ensure our suppliers adhere to the same principles.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XMyjFF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is Olivia Skincare suitable for sensitive skin?",
+            "icon": "none",
+            "row_content": "<p>Yes, our products are dermatologically tested and formulated to be gentle on sensitive skin. However, we recommend performing a patch test before using any new product to ensure compatibility with your skin.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_b4AAfL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer international shipping?",
+            "icon": "none",
+            "row_content": "<p>Yes, we offer international shipping to many countries. Please refer to our Shipping Policy on our website for detailed information about shipping rates and delivery times.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KDYYgE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your return policy?",
+            "icon": "none",
+            "row_content": "<p>We offer a 30-day return policy for unused and unopened products. If you are not satisfied with your purchase, please contact our customer service team to initiate a return. Detailed return instructions are available on our Returns & Exchanges page.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_tXBVGQ",
+        "collapsible_row_KKfmhh",
+        "collapsible_row_KzDirP",
+        "collapsible_row_XMyjFF",
+        "collapsible_row_b4AAfL",
+        "collapsible_row_KDYYgE"
+      ],
+      "settings": {
+        "caption": "Faqs",
+        "heading": "Olivia Q&A",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "section",
+        "color_scheme": "",
+        "container_color_scheme": "accent-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "small",
+        "desktop_layout": "image_second",
+        "heading_size_row": "h3",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "96be040c-0828-498a-bae0-77a723676bd3": {
+      "type": "lumin-mega",
+      "blocks": {
+        "caption_y9yEXc": {
+          "type": "caption",
+          "settings": {
+            "caption": "olivia skin care",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "f8de5d4d-fc2b-45d3-b455-bc17206e8428": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Smooth, Soft, Sensational.</strong>",
+            "heading_size": "h0"
+          }
+        },
+        "3ec023c3-09a2-41c4-b466-2ed2f611cd09": {
+          "type": "feature",
+          "settings": {
+            "icon_size": 74,
+            "heading": "Paraben, sulfate, cruelty-free",
+            "heading_size_alt": 26,
+            "text": "<p>Skin-loving ingredients, no harmful ones.</p>"
+          }
+        },
+        "feature_thKQTw": {
+          "type": "feature",
+          "settings": {
+            "icon_size": 74,
+            "heading": "Display great hydration",
+            "heading_size_alt": 26,
+            "text": "<p>Embrace your natural beauty and feel confident in your skin, makeup optional.</p>"
+          }
+        },
+        "feature_fCgRQB": {
+          "type": "feature",
+          "settings": {
+            "icon_size": 74,
+            "heading": "Hyaluronic Acid, Vitamin C, Peptides",
+            "heading_size_alt": 26,
+            "text": "<p>Boosts collagen production, brightens complexion, and enhances skin elasticity.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "caption_y9yEXc",
+        "f8de5d4d-fc2b-45d3-b455-bc17206e8428",
+        "3ec023c3-09a2-41c4-b466-2ed2f611cd09",
+        "feature_thKQTw",
+        "feature_fCgRQB"
+      ],
+      "settings": {
+        "color_scheme_main": "background-1",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e0aed494-cfe3-4019-aa56-e5ab74232359": {
+      "type": "lumin-mega",
+      "blocks": {
+        "5e4d20aa-80dc-46c9-b92a-40ce260d57bc": {
+          "type": "heading",
+          "settings": {
+            "heading": "People everywhere are Loving It",
+            "heading_size": "h2"
+          }
+        },
+        "840a7bcb-822d-4ebd-9913-f4d3fcd01e0d": {
+          "type": "percent",
+          "settings": {
+            "icon_size": 70,
+            "circle_width": 5,
+            "percent_bg": "#000000",
+            "percent_border": "#f2f2f2",
+            "circle_value_1": 92,
+            "percent_text": 10,
+            "heading": "",
+            "heading_size_alt": 20,
+            "text": "<p>Agreed skin feel smoother<br/>and cleaner after first use</p>"
+          }
+        },
+        "19cee79c-4487-432f-9022-aa2a3b85d13e": {
+          "type": "percent",
+          "settings": {
+            "icon_size": 70,
+            "circle_width": 5,
+            "percent_bg": "#000000",
+            "percent_border": "#f2f2f2",
+            "circle_value_1": 92,
+            "percent_text": 10,
+            "heading": "",
+            "heading_size_alt": 20,
+            "text": "<p>Agreed skin feel smoother and cleaner after first use</p>"
+          }
+        },
+        "70a2b173-fd56-4c7c-b82b-ef7b6a2571d1": {
+          "type": "percent",
+          "settings": {
+            "icon_size": 70,
+            "circle_width": 5,
+            "percent_bg": "#000000",
+            "percent_border": "#f2f2f2",
+            "circle_value_1": 96,
+            "percent_text": 10,
+            "heading": "",
+            "heading_size_alt": 20,
+            "text": "<p>Agreed skin feel smoother and cleaner after first use</p>"
+          }
+        },
+        "07915c89-2aa0-4d88-a1df-027bffc5cac7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "5e4d20aa-80dc-46c9-b92a-40ce260d57bc",
+        "840a7bcb-822d-4ebd-9913-f4d3fcd01e0d",
+        "19cee79c-4487-432f-9022-aa2a3b85d13e",
+        "70a2b173-fd56-4c7c-b82b-ef7b6a2571d1",
+        "07915c89-2aa0-4d88-a1df-027bffc5cac7"
+      ],
+      "settings": {
+        "color_scheme_main": "background-1",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "34037d18-7d72-489c-82b9-03de2db445a2": {
+      "type": "lumin-review",
+      "blocks": {
+        "review_faYRdU": {
+          "type": "review",
+          "settings": {
+            "name_text": "Johan D.",
+            "date_text": "June 2024",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "review_YV8Nyg": {
+          "type": "review",
+          "settings": {
+            "name_text": "Johan D.",
+            "date_text": "June 2024",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "review_WDTr4t": {
+          "type": "review",
+          "settings": {
+            "name_text": "Johan D.",
+            "date_text": "June 2024",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "review_fVJRV8": {
+          "type": "review",
+          "settings": {
+            "name_text": "Johan D.",
+            "date_text": "June 2024",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "review_C8PEhe": {
+          "type": "review",
+          "settings": {
+            "name_text": "Johan D.",
+            "date_text": "June 2024",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "review_faYRdU",
+        "review_YV8Nyg",
+        "review_WDTr4t",
+        "review_fVJRV8",
+        "review_C8PEhe"
+      ],
+      "settings": {
+        "editing": true,
+        "color_scheme": "",
+        "header_text": "Discover the Olivia Skincare Difference",
+        "show_top": true,
+        "rating": "4.9",
+        "rating_count": "Join our satisfied 2K+ happy customers and experience the transformative power of Olivia Skincare.",
+        "review_column_mobile": "1",
+        "review_column_tab": "1",
+        "review_column_desk": "1",
+        "review_load": "4",
+        "load_text": "Load More",
+        "rw_img_size": 120,
+        "rw_img_radius": 8,
+        "block_name_size": 20,
+        "date_size": 10,
+        "block_head_size": 20,
+        "block_text_size": 14,
+        "show_border": false,
+        "rw_border": "#f3f3f3",
+        "border_radius": 10,
+        "section_bg3": "#000000",
+        "section_bg2": "#5a841c",
+        "verify_text": "Verified Buyer",
+        "review_bg": "#ffffff",
+        "feature_svg_color": "#000000",
+        "feature_acc_color": "#000000",
+        "review_pd": 48,
+        "review_pd_m": 20,
+        "show_footer": true,
+        "show_product": true,
+        "like_text": "Was this helpful?",
+        "rw_margin": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "collection_text_alignment": "left",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_desc": true,
+        "quick_desc_legth": 90,
+        "quick_desc_size": 13,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "lumin_gallery_bgrNWK": {
+      "type": "lumin-gallery",
+      "blocks": {
+        "text_JjcFX7": {
+          "type": "text",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "33.3333333",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "grid_width_mobile": "100",
+            "padding_size": 50,
+            "padding_size_mobile": 50,
+            "padding_left_mobile": 30,
+            "bg_color": "#ffffff",
+            "icon_size": 25,
+            "icon_corner": 0,
+            "head": "Follow Us on Instagram",
+            "use_head_font": true,
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "subtitle": "<p><strong>14K FOLLOWERS</strong></p>",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "#LUMINTHEME",
+            "button_link": "",
+            "image_content_position": "middle-right",
+            "desktop_content_alignment": "right",
+            "grid-url": ""
+          }
+        },
+        "image_BQf64D": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "16.6666666",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "grid_width_mobile": "50",
+            "overlay_opacity": 0,
+            "opacity_color": "#000000",
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "",
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "text": "",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "button",
+            "button_link": "",
+            "desktop_content_alignment": "center",
+            "image_content_position": "bottom-center",
+            "grid-url": ""
+          }
+        },
+        "image_qwtXLD": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "16.6666666",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "grid_width_mobile": "50",
+            "overlay_opacity": 0,
+            "opacity_color": "#000000",
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "",
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "text": "",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "button",
+            "button_link": "",
+            "desktop_content_alignment": "center",
+            "image_content_position": "bottom-center",
+            "grid-url": ""
+          }
+        },
+        "image_fc34tg": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "16.6666666",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "grid_width_mobile": "50",
+            "overlay_opacity": 0,
+            "opacity_color": "#000000",
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "",
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "text": "",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "button",
+            "button_link": "",
+            "desktop_content_alignment": "center",
+            "image_content_position": "bottom-center",
+            "grid-url": ""
+          }
+        },
+        "image_w7fjLB": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "16.6666666",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "grid_width_mobile": "50",
+            "overlay_opacity": 0,
+            "opacity_color": "#000000",
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "",
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "text": "",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "button",
+            "button_link": "",
+            "desktop_content_alignment": "center",
+            "image_content_position": "bottom-center",
+            "grid-url": ""
+          }
+        },
+        "image_y9JLLf": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "33.3333333",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "grid_width_mobile": "100",
+            "overlay_opacity": 0,
+            "opacity_color": "#000000",
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "protected all day long",
+            "head_color": "#ffffff",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "text": "",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "button",
+            "button_link": "",
+            "desktop_content_alignment": "center",
+            "image_content_position": "bottom-center",
+            "grid-url": ""
+          }
+        },
+        "text_it8JRe": {
+          "type": "text",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "33.3333333",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "grid_width_mobile": "100",
+            "padding_size": 50,
+            "padding_size_mobile": 50,
+            "padding_left_mobile": 30,
+            "bg_color": "#ffffff",
+            "icon_size": 25,
+            "icon_corner": 0,
+            "head": "Discover the Olivia Difference",
+            "use_head_font": true,
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "subtitle": "<p>Share contact information, store details, and brand content with your customers.</p>",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "button",
+            "button_link": "",
+            "image_content_position": "middle-center",
+            "desktop_content_alignment": "left",
+            "grid-url": ""
+          }
+        },
+        "image_9qxYVx": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "33.3333333",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "grid_width_mobile": "100",
+            "overlay_opacity": 0,
+            "opacity_color": "#000000",
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "worth every penny",
+            "head_color": "#ffffff",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "text": "",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "button",
+            "button_link": "",
+            "desktop_content_alignment": "center",
+            "image_content_position": "bottom-center",
+            "grid-url": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_JjcFX7",
+        "image_BQf64D",
+        "image_qwtXLD",
+        "image_fc34tg",
+        "image_w7fjLB",
+        "image_y9JLLf",
+        "text_it8JRe",
+        "image_9qxYVx"
+      ],
+      "settings": {
+        "layout": "grid",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 36,
+        "margin_bottom": 36
+      }
+    },
+    "a01c5f32-f95e-4385-bc9d-c20e0c511a05": {
+      "type": "lumin-grids",
+      "blocks": {
+        "template--21513975431475__a01c5f32-f95e-4385-bc9d-c20e0c511a05-text-1": {
+          "type": "text",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "25",
+            "medium_hide": false,
+            "grid_width_tablet": "25",
+            "small_hide": false,
+            "show_border": false,
+            "border_color": "#eeeeee",
+            "padding_size": 16,
+            "padding_size_mobile": 10,
+            "padding_left_mobile": 20,
+            "text_border": 0,
+            "bg_color": "#ffffff",
+            "icon_size": 25,
+            "icon_corner": 0,
+            "head": "",
+            "use_body_font": false,
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "subtitle": "<p>Need Help?</p>",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "",
+            "show_secondary": false,
+            "button_link": "",
+            "image_content_position": "middle-left",
+            "desktop_content_alignment": "left",
+            "grid-url": ""
+          }
+        },
+        "badd8ff7-581f-4afb-9b86-52e68fa1fdd8": {
+          "type": "text",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "25",
+            "medium_hide": false,
+            "grid_width_tablet": "25",
+            "small_hide": false,
+            "show_border": false,
+            "border_color": "#eeeeee",
+            "padding_size": 16,
+            "padding_size_mobile": 10,
+            "padding_left_mobile": 20,
+            "text_border": 0,
+            "bg_color": "#ffffff",
+            "icon_size": 25,
+            "icon_corner": 0,
+            "head": "",
+            "use_body_font": false,
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "subtitle": "<p>Email: hi@yourmail.com</p>",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "",
+            "show_secondary": false,
+            "button_link": "",
+            "image_content_position": "middle-left",
+            "desktop_content_alignment": "left",
+            "grid-url": ""
+          }
+        },
+        "50edbb71-5389-46e5-8695-e0f23eb1e4b4": {
+          "type": "text",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "25",
+            "medium_hide": false,
+            "grid_width_tablet": "25",
+            "small_hide": false,
+            "show_border": false,
+            "border_color": "#eeeeee",
+            "padding_size": 16,
+            "padding_size_mobile": 10,
+            "padding_left_mobile": 20,
+            "text_border": 0,
+            "bg_color": "#ffffff",
+            "icon_size": 25,
+            "icon_corner": 0,
+            "head": "",
+            "use_body_font": false,
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "subtitle": "<p>Working hours: 9:00am - 6:00pm, Mon to Sun</p>",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "",
+            "show_secondary": false,
+            "button_link": "",
+            "image_content_position": "middle-left",
+            "desktop_content_alignment": "left",
+            "grid-url": ""
+          }
+        },
+        "13efb6d4-cdcf-4e10-9d1b-876b7843ab8f": {
+          "type": "text",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "25",
+            "medium_hide": false,
+            "grid_width_tablet": "25",
+            "small_hide": false,
+            "show_border": false,
+            "border_color": "#eeeeee",
+            "padding_size": 16,
+            "padding_size_mobile": 10,
+            "padding_left_mobile": 20,
+            "text_border": 0,
+            "bg_color": "#ffffff",
+            "icon_size": 25,
+            "icon_corner": 0,
+            "head": "",
+            "use_body_font": false,
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "subtitle": "<p>24/7 Customer Support</p>",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "",
+            "show_secondary": false,
+            "button_link": "",
+            "image_content_position": "middle-left",
+            "desktop_content_alignment": "left",
+            "grid-url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21513975431475__a01c5f32-f95e-4385-bc9d-c20e0c511a05-text-1",
+        "badd8ff7-581f-4afb-9b86-52e68fa1fdd8",
+        "50edbb71-5389-46e5-8695-e0f23eb1e4b4",
+        "13efb6d4-cdcf-4e10-9d1b-876b7843ab8f"
+      ],
+      "settings": {
+        "video_border": 0,
+        "grid_gap": 0,
+        "color_scheme": "scheme-15ab6c1a-5144-4b7d-a402-482fa31b8c04",
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "margin_top": 36,
+        "margin_bottom": 36
+      }
+    },
+    "41eff030-bfe6-4439-9af3-bc24e7cb0559": {
+      "type": "custom-fonts",
+      "blocks": {
+        "abd19213-10d7-45b5-b8e0-532450e7ddab": {
+          "type": "image",
+          "settings": {
+            "name": "customfont",
+            "custom_font_weight": "none",
+            "custom_font_style": "none",
+            "custom_font_url": "",
+            "apply_h1": true,
+            "apply_h2": true,
+            "apply_h3": true,
+            "apply_h4": true,
+            "apply_h5": true,
+            "apply_h6": true,
+            "apply_span": true,
+            "apply_p": true,
+            "apply_custom": ""
+          }
+        }
+      },
+      "block_order": [
+        "abd19213-10d7-45b5-b8e0-532450e7ddab"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable": true
+      }
+    }
+  },
+  "order": [
+    "2901c3cb-238c-4ae5-ad93-576fa7b45359",
+    "main",
+    "ebd38537-357b-4b9d-94d3-8480c1f8694b",
+    "a1098323-9921-48ef-9777-4dd2323c4c96",
+    "tabs_fn6FhH",
+    "lumin_grids_gXTLwh",
+    "lumin_hero_rEhjqx",
+    "comparison_table_tfMG3t",
+    "collapsible_content_pwHa4R",
+    "96be040c-0828-498a-bae0-77a723676bd3",
+    "e0aed494-cfe3-4019-aa56-e5ab74232359",
+    "34037d18-7d72-489c-82b9-03de2db445a2",
+    "related-products",
+    "lumin_gallery_bgrNWK",
+    "a01c5f32-f95e-4385-bc9d-c20e0c511a05",
+    "41eff030-bfe6-4439-9af3-bc24e7cb0559"
+  ]
+}

@@ -1,0 +1,386 @@
+{% doc %}
+  @prompt
+    Create a 50/50 image and text block with no margins or padding. Left side should display a product image of a woman sleeping with a white noise machine. Right side should have a headline "Uninterrupted sleep at the touch of a button" and a green call-to-action button "Shop SNOOZ White Noise Machine". The layout should be responsive and maintain the 50/50 split on desktop with the image and text sections flush against each other with no spacing., keep a option that i can use color scheme that i created before
+    
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-split-section-{{ ai_gen_id }} {
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .ai-split-section__image-{{ ai_gen_id }} {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-split-section__image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-split-section__image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-split-section__image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .ai-split-section__content-{{ ai_gen_id }} {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: {{ block.settings.text_alignment }};
+    padding: {{ block.settings.content_padding }}px;
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  .ai-split-section__headline-{{ ai_gen_id }} {
+    font-size: {{ block.settings.headline_size }}px;
+    font-weight: {{ block.settings.headline_weight }};
+    margin: 0 0 {{ block.settings.spacing_below_headline }}px 0;
+    line-height: 1.2;
+  }
+
+  .ai-split-section__button-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: {{ block.settings.button_padding_vertical }}px {{ block.settings.button_padding_horizontal }}px;
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: {{ block.settings.button_font_size }}px;
+    font-weight: {{ block.settings.button_font_weight }};
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-split-section-{{ ai_gen_id }} {
+      flex-direction: {{ block.settings.mobile_layout }};
+      min-height: auto;
+    }
+
+    .ai-split-section__image-{{ ai_gen_id }} {
+      min-height: {{ block.settings.mobile_image_height }}px;
+    }
+
+    .ai-split-section__content-{{ ai_gen_id }} {
+      padding: {{ block.settings.mobile_content_padding }}px;
+    }
+
+    .ai-split-section__headline-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_headline_size }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-split-section-{{ ai_gen_id }} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
+  <div class="ai-split-section__image-{{ ai_gen_id }}">
+    {% if block.settings.image %}
+      <img
+        src="{{ block.settings.image | image_url: width: 1000 }}"
+        alt="{{ block.settings.image.alt | escape }}"
+        loading="lazy"
+        width="{{ block.settings.image.width }}"
+        height="{{ block.settings.image.height }}"
+      >
+    {% else %}
+      <div class="ai-split-section__image-placeholder-{{ ai_gen_id }}">
+        {{ 'hero-apparel-1' | placeholder_svg_tag }}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="ai-split-section__content-{{ ai_gen_id }}">
+    {% if block.settings.headline != blank %}
+      <h2 class="ai-split-section__headline-{{ ai_gen_id }}">
+        {{ block.settings.headline }}
+      </h2>
+    {% endif %}
+
+    {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+      <a
+        href="{{ block.settings.button_link }}"
+        class="ai-split-section__button-{{ ai_gen_id }} button button--{{ block.settings.button_style }}"
+      >
+        {{ block.settings.button_text }}
+      </a>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "50/50 Image & Text",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Uninterrupted sleep at the touch of a button"
+    },
+    {
+      "type": "range",
+      "id": "headline_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Headline size",
+      "default": 36
+    },
+    {
+      "type": "select",
+      "id": "headline_weight",
+      "label": "Headline weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "range",
+      "id": "spacing_below_headline",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Space below headline",
+      "default": 30
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Shop SNOOZ White Noise Machine"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        }
+      ],
+      "default": "primary"
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Button font size",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "button_font_weight",
+      "label": "Button font weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "range",
+      "id": "button_padding_vertical",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Button vertical padding",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "button_padding_horizontal",
+      "min": 16,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Button horizontal padding",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 6
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "content_padding",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Content padding",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Mobile Settings"
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Mobile layout",
+      "options": [
+        {
+          "value": "column",
+          "label": "Image on top"
+        },
+        {
+          "value": "column-reverse",
+          "label": "Text on top"
+        }
+      ],
+      "default": "column"
+    },
+    {
+      "type": "range",
+      "id": "mobile_image_height",
+      "min": 200,
+      "max": 400,
+      "step": 20,
+      "unit": "px",
+      "label": "Mobile image height",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "mobile_content_padding",
+      "min": 15,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile content padding",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "mobile_headline_size",
+      "min": 18,
+      "max": 36,
+      "step": 2,
+      "unit": "px",
+      "label": "Mobile headline size",
+      "default": 28
+    }
+  ],
+  "presets": [
+    {
+      "name": "50/50 Image & Text"
+    }
+  ]
+}
+{% endschema %}

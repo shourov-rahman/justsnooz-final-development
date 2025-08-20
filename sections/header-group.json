@@ -1,0 +1,87 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "acd1975e-ba1e-41d8-a56e-b40442760d41": {
+      "type": "lumin-scrolling-text",
+      "blocks": {
+        "3baf0326-f261-4c9f-8894-e511f651bf25": {
+          "type": "announcement",
+          "settings": {
+            "Announcement": "<p>Free Shipping & Free Returns for 100 Nights</p>",
+            "announcement_size": 16,
+            "announcement_size_m": 12,
+            "text_spacing": 1,
+            "text_transform": "uppercase",
+            "announcement_color": "#555671",
+            "icon": "stopwatch",
+            "text_link": ""
+          }
+        },
+        "announcement_cnTp3H": {
+          "type": "announcement",
+          "settings": {
+            "Announcement": "<p>Use Code 15DAD at Checkout for $15 Off SNOOZ Original</p>",
+            "announcement_size": 16,
+            "announcement_size_m": 16,
+            "text_spacing": 0,
+            "text_transform": "none",
+            "announcement_color": "#555671",
+            "icon": "check_mark",
+            "text_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "3baf0326-f261-4c9f-8894-e511f651bf25",
+        "announcement_cnTp3H"
+      ],
+      "settings": {
+        "scroll_speed": 41,
+        "reverse": false,
+        "color_scheme": "scheme-e7a113be-320a-445d-809f-c3ae95af63e5",
+        "padding_desktop": 8,
+        "padding_mobile": 8,
+        "padding_item_desktop": 24,
+        "padding_item_mobile": 8,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [],
+      "settings": {
+        "logo_position": "middle-center",
+        "menu": "main-menu",
+        "menu_type_desktop": "mega-extended",
+        "menu_hover": true,
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "scheme-58ff9a05-7092-43ee-84e7-6f05d1cc9431",
+        "menu_color_scheme": "background-1",
+        "transparent_header": false,
+        "content_color": "#ffffff",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    }
+  },
+  "order": [
+    "acd1975e-ba1e-41d8-a56e-b40442760d41",
+    "header"
+  ]
+}

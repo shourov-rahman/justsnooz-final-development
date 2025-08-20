@@ -1,0 +1,1000 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "301f7d84-22e5-45b5-8f0a-a01627b7db19": {
+      "type": "breadcrumbs",
+      "settings": {
+        "title_home": "Home",
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": 20
+          }
+        },
+        "ad73ef22-d96e-41c5-b4e1-ed8d9daf2239": {
+          "type": "review",
+          "settings": {
+            "lrw_text": "4.8 / 3884 Reviews",
+            "lrw_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "text_benefits_ieBcAA": {
+          "type": "text_benefits",
+          "settings": {
+            "benefits": "<p>✓ Exceptional Quality </p><p>✓ Unmatched Customer Service</p><p>✓ Fast and Reliable Shipping</p>"
+          }
+        },
+        "price_Nhgxzx": {
+          "type": "price",
+          "settings": {
+            "price_size": 20,
+            "sale_price_color": "#c92127",
+            "price_bold": true,
+            "badge_hide": false,
+            "taxes_hide": true,
+            "shipping_hide": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "enable_quantity_discounts": true,
+            "headline": "BUNDLE & SAVE",
+            "background_qb": "#ffffff",
+            "border_qb": "#9b9f9e",
+            "check_bg_qb": "#f3f3f3",
+            "check_border_qb": "#212121",
+            "check_dot": "#212121",
+            "hover_bg_qb": "#ffffff",
+            "hover_border_qb": "#212121",
+            "badge_qb": "#212121",
+            "badge_qb_text": "#ffffff",
+            "compare_price": "#c92127",
+            "qb_border_wd": 2,
+            "qb_border": 8,
+            "preselected": "option_2",
+            "display_badge": "option_2",
+            "badge_text": "Most Popular",
+            "option_1_quantity": 1,
+            "option_1_label": "",
+            "option_1_benefit": "",
+            "option_1_caption": "You save [amount]",
+            "option_1_discount_type": "none",
+            "option_1_percentage_off": 0,
+            "option_1_fixed_amount_off": "0",
+            "option_2_quantity": 2,
+            "option_2_label": "",
+            "option_2_benefit": "free shipping",
+            "option_2_caption": "You save [amount]",
+            "option_2_discount_type": "percentage",
+            "option_2_percentage_off": 20,
+            "option_2_fixed_amount_off": "0",
+            "option_3_quantity": 3,
+            "option_3_label": "",
+            "option_3_benefit": "",
+            "option_3_caption": "You save [amount]",
+            "option_3_discount_type": "percentage",
+            "option_3_percentage_off": 30,
+            "option_3_fixed_amount_off": "0",
+            "option_4_quantity": 0,
+            "option_4_label": "",
+            "option_4_benefit": "",
+            "option_4_caption": "You save [amount]",
+            "option_4_discount_type": "none",
+            "option_4_percentage_off": 0,
+            "option_4_fixed_amount_off": "0"
+          }
+        },
+        "4ec31670-952b-4ed4-8799-249844a8f39b": {
+          "type": "fomo",
+          "settings": {
+            "fomo_text_before": "(x) People are looking at this",
+            "text_size": 15,
+            "text_alignment": "flex-start",
+            "color_scheme": "background-1",
+            "fomo_border_activate": false,
+            "fomo_border": 0,
+            "fomo_border_color": "#c1c1c1",
+            "pill_color": "#c92127",
+            "fomo_min": 128,
+            "fomo_max": 136,
+            "fomo_speed": 3,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "skip_cart": false,
+            "cart_text": ""
+          }
+        },
+        "payment_paFB3G": {
+          "type": "payment",
+          "settings": {
+            "payment_content_alignment": "center"
+          }
+        },
+        "264e37ac-8ac8-475c-9f10-973d46bb217d": {
+          "type": "shipping",
+          "settings": {
+            "ship_days": 2,
+            "cut_off_time": 16,
+            "icon_size": 28,
+            "image_ani": "none",
+            "text_size": 12,
+            "text_style": "body",
+            "text": "Order in <strong>(timer) </strong>to Get By <strong>(date) </strong>|<strong> </strong>30-day returns on all orders",
+            "date_locale": "en-US",
+            "ship_bg": "rgba(0,0,0,0)",
+            "show_border": false,
+            "ship_border": "#f9f9f9",
+            "border_radius": 4,
+            "padding_top": 12,
+            "padding_bottom": 0,
+            "margin_top": 16,
+            "margin_bottom": 16
+          }
+        },
+        "504c9e09-aaa7-49c4-8271-c6ca319d23f2": {
+          "type": "feature",
+          "settings": {
+            "icon_size": 20,
+            "heading": "",
+            "heading_size": 18,
+            "text": "<p>Free shipping on orders of $90 Worldwide</p><p>30-day returns on all orders</p>",
+            "text_size": 12,
+            "padding_top": 8,
+            "padding_bottom": 8
+          }
+        },
+        "71c88278-26d6-4782-b2e1-8055286d7565": {
+          "type": "feature",
+          "settings": {
+            "icon_size": 20,
+            "heading": "",
+            "heading_size": 20,
+            "text": "<p>Shop with peace of mind, your personal information is protected.</p>",
+            "text_size": 13,
+            "padding_top": 8,
+            "padding_bottom": 8
+          }
+        },
+        "feature_ra3bKa": {
+          "type": "feature",
+          "settings": {
+            "icon_size": 20,
+            "heading": "",
+            "heading_size": 20,
+            "text": "<p>Shop with peace of mind, your personal information is protected.</p>",
+            "text_size": 13,
+            "padding_top": 8,
+            "padding_bottom": 8
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible_description_wrQPbe": {
+          "type": "collapsible_description",
+          "settings": {
+            "heading": "DESCRIPTION",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "006e6c29-717a-4f58-8fea-cabc7da6316f": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        },
+        "9ccffc8d-e4c7-404f-8007-8c5162f22285": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "SHIPPING INFORMATION",
+            "icon": "none",
+            "content": "<p>Free 2 Day Shipping on Orders $50+. Returns must be postmarked: within 15 days of delivery for a refund and within 30 days for a Store Credit or Exchange. </p><p><a href=\"/collections/all\" title=\"All products\">Read our full returns policy in our FAQ page.</a></p><p>All Sale items are final sale.</p>",
+            "page": ""
+          }
+        },
+        "f34ad5c4-50a9-4a95-a561-d8c51d1b76dd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "RETURNS & REFUNDS",
+            "icon": "none",
+            "content": "<p>Free 2 Day Shipping on Orders $50+. Returns must be postmarked: within 15 days of delivery for a refund and within 30 days for a Store Credit or Exchange. </p><p><a href=\"/collections/all\" title=\"All products\">Read our full returns policy in our FAQ page.</a></p><p>All Sale items are final sale.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "ad73ef22-d96e-41c5-b4e1-ed8d9daf2239",
+        "text_benefits_ieBcAA",
+        "price_Nhgxzx",
+        "variant_picker",
+        "quantity_selector",
+        "4ec31670-952b-4ed4-8799-249844a8f39b",
+        "buy_buttons",
+        "payment_paFB3G",
+        "264e37ac-8ac8-475c-9f10-973d46bb217d",
+        "504c9e09-aaa7-49c4-8271-c6ca319d23f2",
+        "71c88278-26d6-4782-b2e1-8055286d7565",
+        "feature_ra3bKa",
+        "description",
+        "collapsible_description_wrQPbe",
+        "share",
+        "006e6c29-717a-4f58-8fea-cabc7da6316f",
+        "9ccffc8d-e4c7-404f-8007-8c5162f22285",
+        "f34ad5c4-50a9-4a95-a561-d8c51d1b76dd"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "background-1",
+        "media_size": "large",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "columns",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "show",
+        "show_full_image": true,
+        "second_image_size": 18,
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 12,
+        "padding_bottom": 100
+      }
+    },
+    "lumin_hero_6wVFnr": {
+      "type": "lumin-hero",
+      "blocks": {
+        "hero_ARr3iA": {
+          "type": "hero",
+          "settings": {
+            "use_video": false,
+            "main_image_width": 400,
+            "show_1": true,
+            "head_1": "Heading",
+            "text_1": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
+            "show_2": true,
+            "head_2": "Heading",
+            "text_2": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
+            "show_3": true,
+            "head_3": "Heading",
+            "text_3": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
+            "show_4": true,
+            "head_4": "Heading",
+            "text_4": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
+            "show_5": true,
+            "head_5": "Heading",
+            "text_5": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
+            "show_6": true,
+            "head_6": "Heading",
+            "text_6": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines."
+          }
+        }
+      },
+      "block_order": [
+        "hero_ARr3iA"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "color_scheme_2": "accent-2",
+        "title": "Hero Heading",
+        "heading_size": "h1",
+        "column_alignment": "center",
+        "column_alignment_dt": "center",
+        "column_alignment_mb": "center",
+        "head_text": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.",
+        "feature_image": 60,
+        "feature_image_mb": 40,
+        "gap_section_top": 20,
+        "gap_section_bottom": 0,
+        "pad_section_top": 80,
+        "pad_section_bottom": 80
+      }
+    },
+    "tabs_XLgmRt": {
+      "type": "tabs",
+      "blocks": {
+        "tab_fydHBF": {
+          "type": "tab",
+          "settings": {
+            "heading": "Description",
+            "description": true,
+            "tab_content": "<p>Some text here</p>",
+            "page": ""
+          }
+        },
+        "tab_JcRCNb": {
+          "type": "tab",
+          "settings": {
+            "heading": "More Info",
+            "description": false,
+            "tab_content": "<p><strong>Radiant Glow Face Cream</strong></p><p>Experience the ultimate in skincare luxury with our Radiant Glow Face Cream. Infused with nourishing vitamins and antioxidants, this lightweight yet deeply moisturizing cream rejuvenates your skin, leaving it soft, smooth, and radiant. Perfect for all skin types, it helps to reduce the appearance of fine lines and wrinkles while promoting an even skin tone. Elevate your daily skincare routine with a touch of elegance and let your natural beauty shine through.</p>",
+            "page": "product-info"
+          }
+        },
+        "tab_ALDcWX": {
+          "type": "tab",
+          "settings": {
+            "heading": "Why Us?",
+            "description": false,
+            "tab_content": "<p>✓ Exceptional Quality ✨ Unmatched Customer Service 🌸 Fast and Reliable Shipping</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_fydHBF",
+        "tab_JcRCNb",
+        "tab_ALDcWX"
+      ],
+      "settings": {
+        "tabs_color_scheme": "background-1",
+        "layout": "section",
+        "container_color_scheme": "background-2",
+        "tab_font": 16,
+        "tab_font_align": "center",
+        "tab_content_align": "center",
+        "tab_font_mb": 14,
+        "tab_font_mb_align": "center",
+        "tab_content_align_mb": "center",
+        "show_border": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_jkxhtp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_wUHrwc": {
+          "type": "column",
+          "settings": {
+            "title": "Transform Your Skin, Naturally",
+            "text": "<p>I've tried many skincare brands, but Olivia Skincare stands out for its quality and effectiveness. The Gentle Foaming Cleanser and Nourishing Day Cream are my go-to products.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DBgPnT": {
+          "type": "column",
+          "settings": {
+            "title": "#Worth every penny",
+            "text": "<p>The Olivia Skincare products are worth every penny. The Brightening Eye Cream and Revitalizing Serum have made a noticeable difference in my skin's appearance.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9DiKwL": {
+          "type": "column",
+          "settings": {
+            "title": "#Gentle and effective",
+            "text": "<p>Finally, a skincare brand that understands sensitive skin! Every product I've tried from Olivia Skincare has been gentle and effective.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_wUHrwc",
+        "column_DBgPnT",
+        "column_9DiKwL"
+      ],
+      "settings": {
+        "title": "What Babes Like You Are Saying",
+        "heading_size": "h1",
+        "heading_center": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "navigation_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "comparison_table_XH6XXt": {
+      "type": "comparison-table",
+      "blocks": {
+        "row_dwJHnA": {
+          "type": "row",
+          "settings": {
+            "benefit": "Effective",
+            "us": true,
+            "others": false
+          }
+        },
+        "row_F3drHV": {
+          "type": "row",
+          "settings": {
+            "benefit": "Long Lasting",
+            "us": true,
+            "others": false
+          }
+        },
+        "row_DG9rn7": {
+          "type": "row",
+          "settings": {
+            "benefit": "Real Results",
+            "us": true,
+            "others": false
+          }
+        },
+        "row_tYEWg8": {
+          "type": "row",
+          "settings": {
+            "benefit": "Eco-friendly",
+            "us": true,
+            "others": false
+          }
+        },
+        "row_g7rhKx": {
+          "type": "row",
+          "settings": {
+            "benefit": "Cost $$$",
+            "us": false,
+            "others": true
+          }
+        }
+      },
+      "block_order": [
+        "row_dwJHnA",
+        "row_F3drHV",
+        "row_DG9rn7",
+        "row_tYEWg8",
+        "row_g7rhKx"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "text": "<h1>What Makes <em>Revive</em> Special</h1><p>Find out why you should choose <em><strong>Revive</strong></em> instead of other skincare products.</p>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "layout": "table_second",
+        "color_scheme": "background-1",
+        "logo_width": 90,
+        "mobile_logo_width": 60,
+        "us_label": "",
+        "others_label": "Others",
+        "benefit_color_scheme": "accent-1",
+        "checkmark_color": "#11a928",
+        "icon_cells_color_scheme": "background-1",
+        "table_corner_radius": 10,
+        "table_shadow_opacity": 15,
+        "table_shadow_horizontal_offset": 3,
+        "table_shadow_vertical_offset": 3,
+        "table_shadow_blur": 0,
+        "table_border_thickness": 1,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "e2fe0eca-e002-483a-b480-89fb59bb4de6": {
+      "type": "lumin-scrolling-text",
+      "blocks": {
+        "template--15124688076883__e2fe0eca-e002-483a-b480-89fb59bb4de6-announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "Announcement": "<p>Some promotional text</p>",
+            "announcement_size": 22,
+            "announcement_size_m": 20,
+            "text_spacing": 0,
+            "text_transform": "none",
+            "announcement_color": "#000000",
+            "icon": "none",
+            "text_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15124688076883__e2fe0eca-e002-483a-b480-89fb59bb4de6-announcement-1"
+      ],
+      "settings": {
+        "scroll_speed": 17,
+        "reverse": false,
+        "color_scheme": "background-2",
+        "padding_desktop": 16,
+        "padding_mobile": 8,
+        "padding_item_desktop": 68,
+        "padding_item_mobile": 32,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "229f333e-9e4c-4172-a74b-6e93599e89c3": {
+      "type": "lumin-mega",
+      "blocks": {
+        "37b1339b-c738-466b-b8d6-abc7c4f4afa9": {
+          "type": "caption",
+          "settings": {
+            "caption": "EVERY TIME",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small"
+          }
+        },
+        "template--15124688076883__229f333e-9e4c-4172-a74b-6e93599e89c3-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Beauty, Our Promise.",
+            "heading_size": "h1"
+          }
+        },
+        "text_ECmfUx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We stand behind the quality and efficacy of our products. If you are not completely satisfied with your Olivia Skincare purchase, we offer a hassle-free 30-day return policy for a full refund. Your satisfaction is our top priority.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "37b1339b-c738-466b-b8d6-abc7c4f4afa9",
+        "template--15124688076883__229f333e-9e4c-4172-a74b-6e93599e89c3-heading-1",
+        "text_ECmfUx"
+      ],
+      "settings": {
+        "color_scheme_main": "accent-2",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "image_behavior": "zoom-in",
+        "mobile_content_alignment": "left",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 48,
+        "padding_bottom": 44
+      }
+    },
+    "c0ef23cf-5481-4b47-9b78-3c28134c079a": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if it doesn’t work for me?",
+            "icon": "none",
+            "row_content": "<p>Enjoy the Flexibility of a 30-Day Return Period for Our Products.</p>",
+            "page": ""
+          }
+        },
+        "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Guarentee?",
+            "icon": "none",
+            "row_content": "<p>Shop with <strong>Confidence</strong> Knowing that Our Products are Guaranteed to Meet Your Expectations.</p>",
+            "page": ""
+          }
+        },
+        "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Okay, but why have I never heard of this before?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you provide tracking information?",
+            "icon": "none",
+            "row_content": "<p>Yes, Every order includes a tracking number which will be provided via email or text once your order is fulfilled.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_dLMH3f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-1",
+        "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-2",
+        "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-3",
+        "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-4",
+        "collapsible_row_dLMH3f"
+      ],
+      "settings": {
+        "caption": "Questions? We’ve Got You Covered",
+        "heading": "Q&A",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "accent-2",
+        "container_color_scheme": "accent-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "small",
+        "desktop_layout": "image_second",
+        "heading_size_row": "h3",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_text_GTwhXE": {
+      "type": "video-text",
+      "blocks": {
+        "heading_VXaUfy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dermatologist Approved",
+            "heading_size": "h0"
+          }
+        },
+        "text_fr4DQn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each Olivia Skincare product is dermatologically tested and approved. We prioritize safety and effectiveness, ensuring that our products are suitable for all skin types, including sensitive skin.</p>",
+            "text_style": "subtitle"
+          }
+        },
+        "feature_ejn7yL": {
+          "type": "feature",
+          "settings": {
+            "icon_size": 60,
+            "heading": "Eco-Friendly Practices",
+            "heading_size_alt": 20,
+            "text": "<p>We are dedicated to sustainability. Our packaging is recyclable, and we continually strive to reduce our environmental footprint.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VXaUfy",
+        "text_fr4DQn",
+        "feature_ejn7yL"
+      ],
+      "settings": {
+        "color_scheme_main": "accent-2",
+        "layout_width": "grid",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-15ab6c1a-5144-4b7d-a402-482fa31b8c04",
+        "mobile_content_alignment": "left",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 100,
+        "padding_bottom": 36
+      }
+    },
+    "2e0412f4-6423-47f7-8cbc-137f12eb8d99": {
+      "type": "lumin-mega",
+      "blocks": {
+        "f3acb3be-4b85-4e1f-9809-069b11bdc777": {
+          "type": "caption",
+          "settings": {
+            "caption": "EVERY TIME",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small"
+          }
+        },
+        "4bf1e498-15dc-4351-9c65-b07d321c81ff": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Beauty, Our Passion",
+            "heading_size": "h1"
+          }
+        },
+        "24a40132-d94a-4d66-a5b9-e4c206100a15": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To ensure our Glow Face Cream meets the highest standards of quality and efficacy, we conducted an extensive survey involving 500 users over a period of 8 weeks. Here are the key findings from our survey:</p>",
+            "text_style": "body"
+          }
+        },
+        "786ccd06-7d02-4992-b303-9bc417954806": {
+          "type": "percent",
+          "settings": {
+            "icon_size": 70,
+            "circle_width": 4,
+            "percent_bg": "#171515",
+            "percent_border": "#f2f2f2",
+            "circle_value_1": 95,
+            "percent_text": 10,
+            "heading": "Hydration and Moisturization",
+            "heading_size_alt": 20,
+            "text": "<p>95% of users reported a significant increase in skin hydration.</p>"
+          }
+        },
+        "b178122d-1276-4625-8772-04f3e3af75d4": {
+          "type": "percent",
+          "settings": {
+            "icon_size": 70,
+            "circle_width": 4,
+            "percent_bg": "#171515",
+            "percent_border": "#f2f2f2",
+            "circle_value_1": 87,
+            "percent_text": 10,
+            "heading": "Anti-Aging Benefits",
+            "heading_size_alt": 20,
+            "text": "<p><strong>87%</strong> of users observed a reduction in the appearance of fine lines and wrinkles.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "f3acb3be-4b85-4e1f-9809-069b11bdc777",
+        "4bf1e498-15dc-4351-9c65-b07d321c81ff",
+        "24a40132-d94a-4d66-a5b9-e4c206100a15",
+        "786ccd06-7d02-4992-b303-9bc417954806",
+        "b178122d-1276-4625-8772-04f3e3af75d4"
+      ],
+      "settings": {
+        "color_scheme_main": "background-1",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "zoom-in",
+        "mobile_content_alignment": "left",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 48,
+        "padding_bottom": 44
+      }
+    },
+    "05f459a6-0335-4bab-8d23-ac347077efcc": {
+      "type": "lumin-scrolling-text",
+      "blocks": {
+        "template--15124688076883__05f459a6-0335-4bab-8d23-ac347077efcc-announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "Announcement": "<p>WE LOVE THE PLANET</p>",
+            "announcement_size": 49,
+            "announcement_size_m": 44,
+            "text_spacing": 3,
+            "text_transform": "none",
+            "announcement_color": "#ffffff",
+            "icon": "none",
+            "text_link": ""
+          }
+        },
+        "template--15124688076883__05f459a6-0335-4bab-8d23-ac347077efcc-announcement-2": {
+          "type": "announcement",
+          "settings": {
+            "Announcement": "<p>RECYCLABLE PACKAGING</p>",
+            "announcement_size": 50,
+            "announcement_size_m": 44,
+            "text_spacing": 3,
+            "text_transform": "none",
+            "announcement_color": "#ffffff",
+            "icon": "none",
+            "text_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15124688076883__05f459a6-0335-4bab-8d23-ac347077efcc-announcement-1",
+        "template--15124688076883__05f459a6-0335-4bab-8d23-ac347077efcc-announcement-2"
+      ],
+      "settings": {
+        "scroll_speed": 23,
+        "reverse": true,
+        "color_scheme": "accent-1",
+        "padding_desktop": 16,
+        "padding_mobile": 8,
+        "padding_item_desktop": 48,
+        "padding_item_mobile": 28,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "3475a8f9-021f-4acd-8e57-163ef2a26740": {
+      "type": "lumin-review",
+      "blocks": {
+        "d032a47c-6f6e-4a8e-94b9-d1260a5d6b0d": {
+          "type": "review",
+          "settings": {
+            "name_text": "Johan D.",
+            "date_text": "July 2023",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "e3288062-4139-4942-8a82-452bfebbd63f": {
+          "type": "review",
+          "settings": {
+            "name_text": "Johan D.",
+            "date_text": "July 2023",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "13a5819e-5698-472f-94eb-34d5a7ad9b21": {
+          "type": "review",
+          "settings": {
+            "name_text": "Johan D.",
+            "date_text": "July 2023",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "review_qABkEr": {
+          "type": "review",
+          "settings": {
+            "name_text": "Johan D.",
+            "date_text": "June 2024",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "review_DVPF74": {
+          "type": "review",
+          "settings": {
+            "name_text": "Johan D.",
+            "date_text": "June 2024",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "d032a47c-6f6e-4a8e-94b9-d1260a5d6b0d",
+        "e3288062-4139-4942-8a82-452bfebbd63f",
+        "13a5819e-5698-472f-94eb-34d5a7ad9b21",
+        "review_qABkEr",
+        "review_DVPF74"
+      ],
+      "settings": {
+        "editing": true,
+        "color_scheme": "scheme-fdfdcaaf-e2a4-4d25-9bf4-98cdca1b4883",
+        "header_text": "what our customers say about us",
+        "show_top": true,
+        "rating": "4.9",
+        "rating_count": "Based on 216 Reviews",
+        "review_column_mobile": "1",
+        "review_column_tab": "1",
+        "review_column_desk": "1",
+        "review_load": "4",
+        "load_text": "Load More",
+        "rw_img_size": 110,
+        "rw_img_radius": 8,
+        "block_name_size": 30,
+        "date_size": 12,
+        "block_head_size": 20,
+        "block_text_size": 14,
+        "show_border": true,
+        "rw_border": "#f9f9f9",
+        "border_radius": 8,
+        "section_bg3": "#9b9f9e",
+        "section_bg2": "#008763",
+        "verify_text": "Verified Buyer",
+        "review_bg": "#ffffff",
+        "feature_svg_color": "#212121",
+        "feature_acc_color": "#212121",
+        "review_pd": 54,
+        "review_pd_m": 26,
+        "show_footer": true,
+        "show_product": true,
+        "like_text": "Was this helpful?",
+        "rw_margin": 52,
+        "padding_top": 36,
+        "padding_bottom": 68
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "collection_text_alignment": "left",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_desc": false,
+        "quick_desc_legth": 90,
+        "quick_desc_size": 14,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "301f7d84-22e5-45b5-8f0a-a01627b7db19",
+    "main",
+    "lumin_hero_6wVFnr",
+    "tabs_XLgmRt",
+    "multicolumn_jkxhtp",
+    "comparison_table_XH6XXt",
+    "e2fe0eca-e002-483a-b480-89fb59bb4de6",
+    "229f333e-9e4c-4172-a74b-6e93599e89c3",
+    "c0ef23cf-5481-4b47-9b78-3c28134c079a",
+    "video_text_GTwhXE",
+    "2e0412f4-6423-47f7-8cbc-137f12eb8d99",
+    "05f459a6-0335-4bab-8d23-ac347077efcc",
+    "3475a8f9-021f-4acd-8e57-163ef2a26740",
+    "related-products"
+  ]
+}

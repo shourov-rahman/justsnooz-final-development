@@ -922,86 +922,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "1752929874e9fee5f5": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_384ab40_MrHQiM": {
-          "type": "ai_gen_block_384ab40",
-          "settings": {
-            "heading": "What makes SNOOZ better?",
-            "product_title": "SNOOZ White Noise Machine",
-            "features_column_title": "Features",
-            "column_1_title": "SNOOZ",
-            "column_2_title": "Competitor A",
-            "column_3_title": "Competitor B",
-            "feature_1_name": "Companion App",
-            "feature_1_col1": "check",
-            "feature_1_col2": "cross",
-            "feature_1_col3": "cross",
-            "feature_2_name": "Real Fan Sound",
-            "feature_2_col1": "check",
-            "feature_2_col2": "cross",
-            "feature_2_col3": "cross",
-            "feature_3_name": "No Looping Tracks",
-            "feature_3_col1": "check",
-            "feature_3_col2": "cross",
-            "feature_3_col3": "cross",
-            "feature_4_name": "Natural Sound Spectrum",
-            "feature_4_col1": "check",
-            "feature_4_col2": "cross",
-            "feature_4_col3": "cross",
-            "feature_5_name": "Travel Friendly",
-            "feature_5_col1": "check",
-            "feature_5_col2": "cross",
-            "feature_5_col3": "check",
-            "feature_6_name": "Adjustable Sound",
-            "feature_6_col1": "check",
-            "feature_6_col2": "check",
-            "feature_6_col3": "check",
-            "feature_7_name": "",
-            "feature_7_col1": "check",
-            "feature_7_col2": "cross",
-            "feature_7_col3": "cross",
-            "feature_8_name": "",
-            "feature_8_col1": "check",
-            "feature_8_col2": "cross",
-            "feature_8_col3": "cross",
-            "feature_9_name": "",
-            "feature_9_col1": "check",
-            "feature_9_col2": "cross",
-            "feature_9_col3": "cross",
-            "feature_10_name": "",
-            "feature_10_col1": "check",
-            "feature_10_col2": "cross",
-            "feature_10_col3": "cross",
-            "background_color": "#ffffff",
-            "heading_color": "#000000",
-            "text_color": "#000000",
-            "table_background_color": "#ffffff",
-            "header_background_color": "#f8f9fa",
-            "header_text_color": "#000000",
-            "row_alternate_color": "#f8f9fa",
-            "feature_column_color": "#ffffff",
-            "border_color": "#e9ecef",
-            "checkmark_color": "#28a745",
-            "cross_color": "#dc3545",
-            "heading_size": 36,
-            "product_title_size": 20,
-            "header_text_size": 16,
-            "body_text_size": 14,
-            "padding_top": 60,
-            "padding_bottom": 60,
-            "image_border_radius": 8,
-            "table_border_radius": 8
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_384ab40_MrHQiM"
-      ],
-      "settings": {}
     }
   },
   "order": [
@@ -1016,7 +936,6 @@
     "image_with_text_XEDTj4",
     "image_with_text_iengdC",
     "image_with_text_bzCkwr",
-    "comparison_table_nbhdRG",
-    "1752929874e9fee5f5"
+    "comparison_table_nbhdRG"
   ]
 }

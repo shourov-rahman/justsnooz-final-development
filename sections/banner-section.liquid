@@ -1,0 +1,18 @@
+{% for block in section.blocks %}  {% render 'global-banner', block: block %}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Banner Section",  "class": "section-banner",
+  "max_blocks": 1,  "blocks": [
+    {      "type": "global-banner",      "name": "Global Banner",
+      "settings": []    }
+  ],
+  "presets": [
+    {      "name": "Banner Section",
+      "blocks": [
+        {          "type": "global-banner"
+        }      ]
+    }  ]
+}
+{% endschema %}

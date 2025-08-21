@@ -1,0 +1,15 @@
+<div class="global-banner">  <h2>{{ block.settings.banner_title }}</h2>  <p>{{ block.settings.banner_text }}</p>
+</div>
+
+{% schema %}
+{
+  "name": "Global Banner",  "settings": [
+    {
+      "type": "text",      "id": "banner_title",      "label": "Banner Title",      "default": "Welcome to Our Store"
+    },    {
+      "type": "textarea",      "id": "banner_text",
+      "label": "Banner Text",      "default": "This is a reusable global banner block."
+    }
+  ]
+}
+{% endschema %}

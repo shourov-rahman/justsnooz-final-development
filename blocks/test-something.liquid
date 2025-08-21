@@ -1,0 +1,23 @@
+<div>
+  <p>This is the test-something global block.</p>
+  <p>{{ block.settings.custom_text }}</p>
+</div>
+
+{% schema %}
+{
+  "name": "Test Something",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_text",
+      "label": "Custom Text",
+      "default": "Hello, world!"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Test Something Block"
+    }
+  ]
+}
+{% endschema %}

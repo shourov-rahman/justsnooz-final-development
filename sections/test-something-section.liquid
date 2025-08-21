@@ -1,1 +1,28 @@
-{% render 'test-something', block: block %}
+{% for block in section.blocks %}
+    {% render 'test-something', block: block %}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Test Something Section",
+  "class": "section-test-something",
+  "max_blocks": 1,
+  "blocks": [
+    {
+      "type": "test-something",
+      "name": "Test Something Block",
+      "settings": []
+    }
+  ],
+  "presets": [
+    {
+      "name": "Test Something Section",
+      "blocks": [
+        {
+          "type": "test-something"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
